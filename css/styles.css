@@ -143,7 +143,7 @@ fairly essential to completing this challenge. */
   color: var(--dark-beige);
   font-size: var(--regular-text);
   line-height: var(--regular-text-line-height);
-  width: 70%;
+  /*width: 70%;*/
 }
 
 .card-section {
@@ -160,17 +160,7 @@ fairly essential to completing this challenge. */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  height: 250px;
-  font-size: 1.5rem;
-  box-shadow: 0px 0px 10px 0px var(--inky-black);
-}
-
-.forest-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
+  /*width: 70%;*/
   height: 250px;
   font-size: 1.5rem;
   box-shadow: 0px 0px 10px 0px var(--inky-black);
@@ -259,17 +249,20 @@ width, etc. */
 
 @media screen and (min-width: 768px) {
   .card-section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    /* width: 100%;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    /*flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;*/
   }
   .product-card {
-    width: 45%;
+    /*width: 45%;*/
   }
   .intro-text {
-    width: 45%;
+    /*width: 45%;*/
   }
 }
 
